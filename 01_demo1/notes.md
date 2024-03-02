@@ -40,11 +40,11 @@
 			
 ## Lifecycle of servlet
 
-   instantiation <load-on-startup>
-     when you make the first request -ve(by default)
-     when the server deployed  +ve 0 or any positive number
-   init
-   service
-   destroy
+   	instantiation <load-on-startup>
+		when you make the first request -ve(by default)
+		when the server deployed  +ve 0 or any positive number
+   	init
+   	service
+   	destroy
 
 	
