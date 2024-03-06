@@ -7,20 +7,22 @@
 		.html, .jsp => directly access to client
 		
 		
+
 		
 # servlet is used to generate response at runtime
 
 			Servlet
 			  service();
 			
-			GenericServlet
+			GenericServlet implements Servlet
 			
-			HttpServlet
+			abstract HttpServlet extends GenericServlet
 			   service();
 			   doGet
 			   doPost
 			
-			MyServlet
+			MyServlet extends HttpServlet
+			mapped with the url
 			
 			http://localhost:9090/01_Demo1/login
 			
@@ -46,5 +48,9 @@
    	init
    	service
    	destroy
+   	
+   	
+## get vs post method
+	
 
 	
