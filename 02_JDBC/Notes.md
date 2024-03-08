@@ -11,20 +11,43 @@
 		ArrayList<String> list2 = new ArrayList<String>(); //tight coupling
 		
 ## step to connect to the database
-  step 0: download and install the db on your system
-  https://www.oicbasics.com/2020/01/download-oracle-database-11g-xe-express.html
-  https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+	step 0: download and install the db on your system
+	https://www.oicbasics.com/2020/01/download-oracle-database-11g-xe-express.html
+	https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
   
-  after installation, open the sql command line
-  conn system/<password>
+	after installation, open the sql command line
+	conn system/<password>
+	alter user hr identified by hr account unlock;
   
-  alter user hr identified by hr account unlock;
-  
-  # step 1: load the driver
-  # step 2: get the connection object using url, username & pwd
-  
+### step 1: load the driver
+### step 2: get the connection object using url, username & pwd
   
   
+ 
+ 
+## Object for CRUD operation
+	 Statement : fixed query
+	 	String sql ="insert into emp(id,name,salary) values (101, 'jackson', 3000)";
+	 	Statement st = con.createStatement();
+	 	int rowAffected = st.executeUpdate(sql);
+	 	
+	 PreparedStatement : parameterized query
+	 	String sql ="insert into emp(id,name,salary) values (?,?,?)";
+	 	PreparedStatement ps = con.prepareStatement(sql);
+	 	
+	 	int rowAffected = st.executeUpdate();
+	 	
+	 	
+	 CallableStatement
+	 
+### execute CRUD operation ,use the below method
+	executeUpdate (Insert, update, delete)
+	executeQuery (Select)
+	execute (all type of query)
+	
+
+ 
+ 
 
 	
   

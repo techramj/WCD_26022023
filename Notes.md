@@ -33,8 +33,67 @@ http://localhost:8080/01_demo1/home.html
 git remote add origin https://github.com/techramj/WCD_26022023.git
 git branch -M main
 git push -u origin main
-
-
+Siddharth Bhandarkar
+20:59
+Siddharth Bhandarkar
+ajay swami
+20:59
+Ajay Swami
+Sharayu Yawalkar
+20:59
+sharayu tadkal
+BHARAT PUROHIT
+20:59
+BHARAT PUROHIT
+Rahul Lokare
+20:59
+Rahul Lokare
+GAURAV BHAGAT
+20:59
+Gaurav Bhagat
+Himanshu Lohakare
+20:59
+Himanshu Lohakare
+sarthak chilamwar
+20:59
+sarthak chilamwar
+Garima Rajput
+20:59
+Garima Rajput
+Dhanashri Chavan
+20:59
+Dhanshri chavan
+Bhushan Lokhande
+20:59
+Bhushan Lokhande
+Aditya Pandey
+20:59
+Aditya Pandey
+Gauri Pund
+20:59
+Gauri Pund
+Tanisha Wagh
+20:59
+TANISHA WAGH
+akanksha bande
+20:59
+Akanksha Bande
+Kunal Wagh
+20:59
+Kunal Wagh
+Shrinivas Burge
+20:59
+Shrinivas Burge
+Rohit Ahuja
+20:59
+Rphit Ahuja
+Aman Mujawar
+21:00
+Aman  Mujawar
+Maheshwari Wakode
+Sharvari Jagtap
+21:00
+Sharvari Jagtap
 
 
 

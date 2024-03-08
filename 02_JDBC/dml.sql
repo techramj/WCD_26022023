@@ -8,3 +8,21 @@
    values (3,'sam','123','Sammer','Kanetkar','sam@test.com');
    
    commit;
+   
+   --update password
+   update users set password='abc' where user_id = 3;
+   
+   --delete user
+   delete from users where user_id = 2; 
+   
+   
+  /*
+   Create
+   Read
+   Update
+   Delete
+   
+  */
+   
+   
+   
