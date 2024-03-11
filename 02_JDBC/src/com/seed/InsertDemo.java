@@ -10,7 +10,7 @@ import java.util.List;
 import com.seed.entity.Employee;
 
 public class InsertDemo {
-
+/*
 	public static void example1() {
 		String sql = "insert into emp(id,name,salary) values (100, 'jack', 2000)";
 		Connection con = ConnectionUtil.getConnection();
@@ -206,5 +206,5 @@ public class InsertDemo {
 		performanceTestBetweenStatementAndPrepatedStatementUsingBatch("statement", 10000);
 
 	}
-
+*/
 }

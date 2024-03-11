@@ -9,7 +9,7 @@ public class ConnectionUtil {
 	private static Connection connection;
 	
 	static {
-		/*String driver ="oracle.jdbc.driver.OracleDriver";
+		String driver ="oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1522:XE";
 		String username ="hr";
 		String password = "hr";
@@ -28,7 +28,7 @@ public class ConnectionUtil {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		*/
+		
 	}
 	
 	public static synchronized Connection getConnection(String driver, String url, String username, String password) {
