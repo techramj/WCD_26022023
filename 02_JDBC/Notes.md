@@ -41,12 +41,14 @@
 	 CallableStatement
 	 
 ### execute CRUD operation ,use the below method
-	executeUpdate (Insert, update, delete)
-	executeQuery (Select)
-	execute (all type of query)
+	int executeUpdate (Insert, update, delete)
+	ResultSet executeQuery (Select)
+	boolean execute (all type of query)
 	
 
  
+ Employee emp = new Employee();
+ List<Integer> list = new ArrayList<>();
  
 
 	

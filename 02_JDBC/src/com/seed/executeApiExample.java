@@ -6,7 +6,7 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UpdateApiExample {
+public class executeApiExample {
 	
 	public static void example1(String sql) {
 		Connection con = ConnectionUtil.getConnection();
