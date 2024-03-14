@@ -18,6 +18,22 @@ HTTP:
    trace
    patch
 
+
+
+
+# sql query
+    create table friends(username varchar2(20), friend varchar2(20));
+    insert into friends values ('samm','Raj');
+    insert into friends values ('samm','Rajesh');
+    insert into friends values('samm','Rajan');
+    insert into friends values('samm','Rajiv');
+
+    insert into friends values('johns', 'Jack');
+    insert into friends values('johns', 'Jackie');
+    insert into friends values('johns', 'Jackson');
+    insert into friends values('johns', 'Jasmine');
+
+
 install: Tomcat
 step 1: download tomcat
 https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86-windows-x64.zip

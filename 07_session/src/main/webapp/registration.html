@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <fieldset>
+  	<h2 align="center">Add User Details</h2>
+	<form action="register" method="post">
+		<table>
+		    <tr>
+				<td>User Id</td>
+				<td><input type="number" name="userId"></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lastName"></td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit" >Register</button></td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  	<h2 align="center">Update User </h2>
+	<form action="updateUser" method="post">
+		<table>
+		    <tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lastName"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit" >Update</button></td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+
+<br><br>
+
+<fieldset>
+  	<h2 align="center">Delete User </h2>
+	<form action="deleteUser" method="post">
+		<table>
+		    <tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			
+			<tr>
+				<td>password</td>
+				<td><input type=password name="password"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><button type="submit" >Delete User</button></td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+</body>
+</html>

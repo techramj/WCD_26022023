@@ -1,0 +1,5 @@
+Session Tracking
+1. hidden Parameter
+2. cookie
+3. session object
+4. url rewriting
