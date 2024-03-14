@@ -72,4 +72,10 @@ public class UserDaoImpl implements UserDao {
 		this.connection = connection;
 	}
 
+	@Override
+	public List<String> findFriends(String username) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -32,6 +32,7 @@ public class FriendServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<body>");
 		out.println("<h4>Friend of "+user.getFirstName()+" "+user.getLastName()+" is ");
+		
 		out.println("</body>");
 		out.println("</html>");
 	}

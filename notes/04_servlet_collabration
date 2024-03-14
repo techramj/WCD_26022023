@@ -1,0 +1,14 @@
+Emp
+ display();
+
+Add
+  Emp ob = new Emp();
+  ob.display();
+
+
+ServletA
+  
+
+
+ServletB
+  doGet(){}

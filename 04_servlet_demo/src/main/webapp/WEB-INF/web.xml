@@ -24,6 +24,10 @@
 		<url-pattern>/register</url-pattern>
 	</servlet-mapping>
 	
+	<listener>
+		<listener-class>com.seed.servlet.ApplicationContext</listener-class>
+	</listener>
+	
 	
 	<!-- <servlet>
 		<servlet-name>login</servlet-name>

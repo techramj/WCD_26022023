@@ -13,5 +13,6 @@ public interface UserDao {
 	public void update(String username, User user) throws SQLException;
 	public void delete(String username) throws SQLException;
 	public List<User> findAll() throws SQLException;
+	public List<String> findFriends(String username) throws SQLException;
 
 }
