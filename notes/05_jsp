@@ -1,0 +1,50 @@
+
+ .jsp ->  .java
+ .java ->.class
+ .class  -> load the class
+ create the object of the class
+ init
+ service
+ destroy
+
+Lifecycle of servlet
+1. instantiation
+2. init
+3. service
+4. destroy
+
+ LifCycle of JSP:
+ 1. translation
+ 2. compilation
+ 3. loading
+ 4. instantiation
+ 5. jspInit
+ 6. jspService
+ 7. jspDestroy
+
+
+tag in jsp
+--------------------------
+<%  %> scriptlet
+<%! %> declaration
+<%= %> expression
+<%@ %> directive
+<%--   %>  jsp comment
+<!--   -->  html comment
+
+implicit object
+-----------------
+request         HttpServletRequest
+response        HttpServletResponse
+session         HttpSession
+application     ServletContext
+config          ServletConfig
+exception       Throwable
+out             JspWriter
+pageContext     pageContext
+page            Object
+
+
+el implicit object
+------------------
+

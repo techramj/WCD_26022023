@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.seed.entity.User;
@@ -70,6 +71,21 @@ public class UserDaoImpl implements UserDao {
 	
 	public void setConnection(Connection connection) {
 		this.connection = connection;
+	}
+
+	@Override
+	public List<String> findFriends(String username) throws SQLException {
+		String sql= "select friend from friends where username =?";
+		List<String> list = new ArrayList<String>();
+		try (PreparedStatement ps = connection.prepareStatement(sql)) {
+			ps.setString(1, username);
+			try (ResultSet rs = ps.executeQuery()) {
+				while (rs.next()) {
+					list.add(rs.getString(1));
+				}
+			}
+		}
+		return list;
 	}
 
 }

@@ -2,6 +2,8 @@ package com.seed.service;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.seed.dao.UserDao;
 import com.seed.dao.UserDaoImpl;
@@ -38,6 +40,17 @@ public class UserServiceImpl implements UserService{
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public List<String> getFriends(String username) {
+		try {
+			return userDao.findFriends(username);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new ArrayList<String>();
 	}
 
 }

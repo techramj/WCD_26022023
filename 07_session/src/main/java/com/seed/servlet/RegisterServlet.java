@@ -19,14 +19,6 @@ public class RegisterServlet extends HttpServlet {
 	
 	@Override
 	public void init() throws ServletException {
-		ServletContext context = getServletContext();
-		String driver = context.getInitParameter("jdbc.driverClass");
-		String url = context.getInitParameter("jdbc.url");
-		String username = context.getInitParameter("jdbc.username");
-		String password = context.getInitParameter("jdbc.password");
-		
-		Connection con = ConnectionUtil.getConnection(driver, url, username, password);
-		context.setAttribute("connection", con);
 	}
 	
 	@Override
