@@ -3,6 +3,7 @@ package com.seed.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.util.Date;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -53,6 +54,7 @@ public class LoginServlet extends HttpServlet {
 			out.println("<form action='friend' method='get'>");
 			out.println("<button type='submit'>Show Friend List</button>");
 			out.println("</form>");
+			out.println("<h5>"+new Date()+"</h5>");
 		}else {
 			out.println("Invalid username and password.");
 			out.println("<p><a href='login.html'>Go to login page</a></p>");

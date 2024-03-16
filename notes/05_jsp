@@ -29,6 +29,14 @@ tag in jsp
 <%! %> declaration
 <%= %> expression
 <%@ %> directive
+    1. page <%@ page %>
+      attribute_name
+        import
+        isErrorPage="true"  default false
+        errorPage="page_to be display during exception"
+
+    2. include  <%@ include %>
+    3. taglib   <%@ taglib %>
 <%--   %>  jsp comment
 <!--   -->  html comment
 
@@ -47,4 +55,16 @@ page            Object
 
 el implicit object
 ------------------
+
+
+
+
+
+
+
+a.jsp
+fasd
+
+
+
 
