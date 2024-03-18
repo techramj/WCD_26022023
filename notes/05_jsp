@@ -39,7 +39,11 @@ tag in jsp
     3. taglib   <%@ taglib %>
 <%--   %>  jsp comment
 <!--   -->  html comment
-
+jspAction tag
+  <jsp:useBean>
+  <jsp:setProperty>
+  <jsp:getProperty>
+  <jsp:forward>
 implicit object
 -----------------
 request         HttpServletRequest
@@ -53,17 +57,28 @@ pageContext     pageContext
 page            Object
 
 
+scope in jsp
+--------------
+page
+request
+session
+  application
+
+
 el implicit object
 ------------------
+requestScope
+pageScope
+sessionScope
+applicationScope
+header
+headerValues
+param
+paramValues
 
 
+${requestScope.a}  => request.getAttribute("a")
 
-
-
-
-
-a.jsp
-fasd
 
 
 
