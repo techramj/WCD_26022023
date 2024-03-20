@@ -67,14 +67,16 @@ session
 
 el implicit object
 ------------------
-requestScope
 pageScope
+requestScope
 sessionScope
 applicationScope
 header
 headerValues
 param
 paramValues
+cookie
+
 
 
 ${requestScope.a}  => request.getAttribute("a")
