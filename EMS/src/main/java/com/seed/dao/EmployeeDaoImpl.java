@@ -112,6 +112,19 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		emp.setDepartment(rs.getString("department"));
 		return emp;
 	}
+
+	@Override
+	public List<String> findAllDepartments() throws SQLException {
+		List<String> depts = new ArrayList<>();
+		try (PreparedStatement ps = connection.prepareStatement(FIND_ALL_DEPT)) {
+			try (ResultSet rs = ps.executeQuery()) {
+				while (rs.next()) {
+					depts.add(rs.getString(1));
+				}
+			}
+		}
+		return depts;
+	}
 	
 
 

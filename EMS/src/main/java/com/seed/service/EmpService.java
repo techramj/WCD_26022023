@@ -13,5 +13,6 @@ public interface EmpService {
 	public Employee getEmployeeDetails(int id);
 	public List<Employee> getAllEmployeeDetails();
 	public List<Employee> getEmployeesDetail(String firstName);
+	public List<String> getDepartments();
 
 }
