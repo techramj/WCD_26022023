@@ -35,7 +35,16 @@
 			</div>
 			<div class="form-group">
 				<label for="department">Department</label> 
-				<input type="text" class="form-control" name="department" value="${emp.department }">
+				<select  class="form-control" name="department">
+					<c:forEach var="dept" items="${departments }" >
+					    <c:if test="${dept == emp.department }">
+					    	<option value="${dept }" selected="selected">${dept }</option>
+					    </c:if>
+					    <c:if test="${dept != emp.department }">
+					    	<option value="${dept }">${dept }</option>
+					    </c:if>
+					</c:forEach>
+				</select>
 			</div>
 			
 			<div>

@@ -44,7 +44,7 @@ public class EmpUpdateController extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/views/empForm.jsp");
 		Employee emp = empService.getEmployeeDetails(id);
 		request.setAttribute("emp", emp);
-		//request.setAttribute("departments", empService.getDepartments());
+		request.setAttribute("departments", empService.getDepartments());
 		rd.forward(request, response);
 	}
 

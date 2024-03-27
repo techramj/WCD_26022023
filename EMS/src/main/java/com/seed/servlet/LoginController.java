@@ -37,6 +37,7 @@ public class LoginController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		System.out.println("username: "+username+"  password: "+password);
@@ -56,6 +57,7 @@ public class LoginController extends HttpServlet {
 		
 		RequestDispatcher rd = request.getRequestDispatcher(page);
 		rd.forward(request, response);
+		
 	}
 	
 	
@@ -74,7 +76,7 @@ public class LoginController extends HttpServlet {
 		}
 		
 		RequestDispatcher rd = request.getRequestDispatcher(page);
-		rd.forward(request, response);
+		rd.forward(request, response);	
 	}
 	
 	
